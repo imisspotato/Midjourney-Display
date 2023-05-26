@@ -25,13 +25,13 @@ export default function Home() {
   <div className="logo">🖼️</div>
   <div className="buttons">
     <button className="button" onClick={fetchImages}>Refresh Images</button>
-    <a href="https://platform.myapps.ai/access">
+    <a href="#">
       <button className="button">Dashboard</button>
     </a>
-    <a href="https://img-ui-production.up.railway.app/">
+    <a href="#/">
       <button className="button">Generate</button>
     </a>
-    <a href="https://platform.myapps.ai/signin">
+    <a href="#n">
       <button className="button">Sign Up</button>
     </a>
   </div>
