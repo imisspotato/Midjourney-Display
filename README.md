@@ -1,3 +1,6 @@
+Sure, here's your content correctly formatted in Markdown:
+
+```markdown
 # Midjourney Showcase
 
 Midjourney Showcase is a web-based gallery that presents a collection of AI-generated images. It's a dynamic and interactive platform that lets you explore and immerse yourself in the fascinating world of AI creativity.
@@ -16,18 +19,18 @@ Before you start with the setup process, make sure you have the following:
 
 First, you need to clone this repository to your local machine using Git. You can do this with the following command:
 
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/midjourney-showcase.git
-\`\`\`
+```
 
 ### Step 2: Install Dependencies
 
 Navigate into the project directory and install the required dependencies with npm:
 
-\`\`\`bash
+```bash
 cd midjourney-showcase
 npm install
-\`\`\`
+```
 
 ### Step 3: Setup Discord Bot
 
@@ -40,13 +43,13 @@ To set up a new Discord bot, follow these steps:
 
 ### Step 4: Environment Variables
 
-In the root of your project, create a \`.env\` file. This file will store environment variables, including the Discord bot token.
+In the root of your project, create a `.env` file. This file will store environment variables, including the Discord bot token.
 
-The \`.env\` file should look something like this:
+The `.env` file should look something like this:
 
-\`\`\`bash
+```bash
 DISCORD_BOT_TOKEN=<your-bot-token>
-\`\`\`
+```
 
 Replace `<your-bot-token>` with the token you got from the Discord Developer Portal.
 
@@ -54,11 +57,11 @@ Replace `<your-bot-token>` with the token you got from the Discord Developer Por
 
 Now, you can run the app using the following command:
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
-Visit \`localhost:3000\` in your browser, and you should see the Midjourney Showcase up and running!
+Visit `localhost:3000` in your browser, and you should see the Midjourney Showcase up and running!
 
 ## Contributing
 
@@ -67,3 +70,4 @@ We welcome contributions from the community. If you wish to contribute, please f
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+```
