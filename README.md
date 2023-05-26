@@ -1,4 +1,4 @@
-# AI Tutor Gallery
+# Your Midjourney Gallery
 
 AI Tutor Gallery is a React application that fetches and displays a gallery of images. This application is perfect for viewing AI generated images in a clean and simple UI.
 
