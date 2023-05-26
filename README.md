@@ -1,6 +1,6 @@
 # Your Midjourney Gallery
 
-AI Tutor Gallery is a React application that fetches and displays a gallery of images. This application is perfect for viewing AI generated images in a clean and simple UI.
+Midjourney Gallery is a React application that fetches and displays a gallery of images. This application is perfect for viewing AI generated images in a clean and simple UI.
 
 ## Features
 
@@ -9,14 +9,25 @@ AI Tutor Gallery is a React application that fetches and displays a gallery of i
 - Allows users to refresh the image set manually
 - Provides links to a dashboard and a separate image generation tool
 
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- You have a Windows/Linux/Mac machine running a recent version of Node.js and npm (Node package manager). Visit [Node.js downloads](https://nodejs.org/en/download/) and follow the instructions for your operating system.
+- You have a text editor installed, such as Visual Studio Code.
+
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/yourusername/aitutorgallery.git`
 2. Navigate into the directory: `cd aitutorgallery`
 3. Install the dependencies: `npm install`
-4. Start the development server: `npm start`
 
 ## Usage
+
+To start the development server:
+
+1. Run `npm run dev`
+2. Open your web browser and navigate to `http://localhost:3000`
 
 When you open the application, you'll see a gallery of images. You can click on any image to view it in a larger format.
 
