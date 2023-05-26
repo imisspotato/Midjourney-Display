@@ -1,47 +1,37 @@
-# TypeScript Next.js example
+# AI Tutor Gallery
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+AI Tutor Gallery is a React application that fetches and displays a gallery of images. This application is perfect for viewing AI generated images in a clean and simple UI.
 
-## Deploy your own
+## Features
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
+- Fetches new images from an API at regular intervals
+- Provides a lightbox for viewing images in full size
+- Allows users to refresh the image set manually
+- Provides links to a dashboard and a separate image generation tool
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+## Installation
 
-## How to use it?
+1. Clone the repository: `git clone https://github.com/yourusername/aitutorgallery.git`
+2. Navigate into the directory: `cd aitutorgallery`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Usage
 
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-```
+When you open the application, you'll see a gallery of images. You can click on any image to view it in a larger format.
 
-```bash
-yarn create next-app --example with-typescript with-typescript-app
-```
+There are also three buttons:
 
-```bash
-pnpm create next-app --example with-typescript with-typescript-app
-```
+1. **Refresh Images**: This button fetches a new set of images from the server.
+2. **Dashboard**: This button takes you to the dashboard, where you can manage the application.
+3. **Generate**: This button takes you to an image generation tool where you can generate new images.
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Enjoy browsing and generating your AI images!
 
-## Notes
+## Contributing
 
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+We welcome contributions! Please see our contributing guide for more details.
 
-```
-npm install --save-dev typescript
-```
+## License
 
-To enable TypeScript's features, we install the type declarations for React and Node.
-
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
-
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+This project is licensed under the MIT License.
