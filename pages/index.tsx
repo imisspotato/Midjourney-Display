@@ -22,17 +22,20 @@ export default function Home() {
   return (
     <div className="container">
       <div className="header">
-        <div className="logo">🖼️</div>
-        <div className="buttons">
-          <button className="button" onClick={fetchImages}>Refresh Images</button>
-          <a href="#">
-            <button className="button">Dashboard</button>
-          </a>
-          <a href="#">
-            <button className="button">Generate</button>
-          </a>
-        </div>
-      </div>
+  <div className="logo">🖼️</div>
+  <div className="buttons">
+    <button className="button" onClick={fetchImages}>Refresh Images</button>
+    <a href="https://platform.myapps.ai/access">
+      <button className="button">Dashboard</button>
+    </a>
+    <a href="https://img-ui-production.up.railway.app/">
+      <button className="button">Generate</button>
+    </a>
+    <a href="https://platform.myapps.ai/signin">
+      <button className="button">Sign Up</button>
+    </a>
+  </div>
+</div>
       <h1 className="title">Midjourney <span>Showcase Next.js + Vercel</span></h1>
       <div className="gallery">
         {imageURLs.map((url, index) => (
