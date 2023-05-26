@@ -33,7 +33,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <h1 className="title">AI Tutor <span>Gallery</span></h1>
+      <h1 className="title">Midjourney <span>Showcase Next.js + Vercel</span></h1>
       <div className="gallery">
         {imageURLs.map((url, index) => (
           <div key={index} className="image-container">
