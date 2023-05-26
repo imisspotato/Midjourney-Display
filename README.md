@@ -1,6 +1,3 @@
-Sure, here's your content correctly formatted in Markdown:
-
-```markdown
 # Midjourney Showcase
 
 Midjourney Showcase is a web-based gallery that presents a collection of AI-generated images. It's a dynamic and interactive platform that lets you explore and immerse yourself in the fascinating world of AI creativity.
@@ -70,4 +67,3 @@ We welcome contributions from the community. If you wish to contribute, please f
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-```
