@@ -1,3 +1,6 @@
+Sure, here's your updated content with the additional installation instruction:
+
+```markdown
 # Midjourney Showcase
 
 Midjourney Showcase is a web-based gallery that presents a collection of AI-generated images. It's a dynamic and interactive platform that lets you explore and immerse yourself in the fascinating world of AI creativity.
@@ -22,11 +25,11 @@ git clone https://github.com/yourusername/midjourney-showcase.git
 
 ### Step 2: Install Dependencies
 
-Navigate into the project directory and install the required dependencies with npm:
+Navigate into the project directory and install the required dependencies with npm. Note: Due to a dependency conflict with `react-image-lightbox`, you need to add the `--legacy-peer-deps` flag:
 
 ```bash
 cd midjourney-showcase
-npm install
+npm install --legacy-peer-deps
 ```
 
 ### Step 3: Setup Discord Bot
@@ -40,15 +43,18 @@ To set up a new Discord bot, follow these steps:
 
 ### Step 4: Environment Variables
 
-In the root of your project, create a `.env` file. This file will store environment variables, including the Discord bot token.
+In the root of your project, create a `.env` file. This file will store environment variables, including the Discord bot token and the IDs for the server, channel, and session.
 
 The `.env` file should look something like this:
 
 ```bash
-DISCORD_BOT_TOKEN=<your-bot-token>
+SALAI_TOKEN=<your-bot-token>
+CHANNEL_ID=<your-channel-id>
+SERVER_ID=<your-server-id>
+SESSION_ID=<your-session-id>
 ```
 
-Replace `<your-bot-token>` with the token you got from the Discord Developer Portal.
+Replace `<your-bot-token>` with the token you got from the Discord Developer Portal. The `<your-channel-id>`, `<your-server-id>`, and `<your-session-id>` need to be replaced with the corresponding IDs from your Discord server.
 
 ### Step 5: Run the App
 
@@ -67,3 +73,4 @@ We welcome contributions from the community. If you wish to contribute, please f
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+```
