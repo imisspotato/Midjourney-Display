@@ -1,48 +1,69 @@
-# Your Midjourney Gallery
+# Midjourney Showcase
 
-Midjourney Gallery is a React application that fetches and displays a gallery of images. This application is perfect for viewing AI generated images in a clean and simple UI.
-
-## Features
-
-- Fetches new images from an API at regular intervals
-- Provides a lightbox for viewing images in full size
-- Allows users to refresh the image set manually
-- Provides links to a dashboard and a separate image generation tool
+Midjourney Showcase is a web-based gallery that presents a collection of AI-generated images. It's a dynamic and interactive platform that lets you explore and immerse yourself in the fascinating world of AI creativity.
 
 ## Prerequisites
 
-Before you begin, ensure you have met the following requirements:
+Before you start with the setup process, make sure you have the following:
 
-- You have a Windows/Linux/Mac machine running a recent version of Node.js and npm (Node package manager). Visit [Node.js downloads](https://nodejs.org/en/download/) and follow the instructions for your operating system.
-- You have a text editor installed, such as Visual Studio Code.
+- [Node.js](https://nodejs.org/en/download/) installed (version 12.0.0 or higher).
+- An account on [Discord](https://discord.com/).
+- Basic understanding of JavaScript and React.
 
-## Installation
+## Setup Instructions
 
-1. Clone the repository: `git clone https://github.com/yourusername/aitutorgallery.git`
-2. Navigate into the directory: `cd aitutorgallery`
-3. Install the dependencies: `npm install`
+### Step 1: Clone the Repository
 
-## Usage
+First, you need to clone this repository to your local machine using Git. You can do this with the following command:
 
-To start the development server:
+\`\`\`bash
+git clone https://github.com/yourusername/midjourney-showcase.git
+\`\`\`
 
-1. Run `npm run dev`
-2. Open your web browser and navigate to `http://localhost:3000`
+### Step 2: Install Dependencies
 
-When you open the application, you'll see a gallery of images. You can click on any image to view it in a larger format.
+Navigate into the project directory and install the required dependencies with npm:
 
-There are also three buttons:
+\`\`\`bash
+cd midjourney-showcase
+npm install
+\`\`\`
 
-1. **Refresh Images**: This button fetches a new set of images from the server.
-2. **Dashboard**: This button takes you to the dashboard, where you can manage the application.
-3. **Generate**: This button takes you to an image generation tool where you can generate new images.
+### Step 3: Setup Discord Bot
 
-Enjoy browsing and generating your AI images!
+To set up a new Discord bot, follow these steps:
+
+1. Visit the [Discord Developer Portal](https://discord.com/developers/applications) and log in with your account.
+2. Click on "New Application", then provide a name and confirm by clicking "Create".
+3. Go to the "Bot" tab and click "Add Bot". Confirm by clicking "Yes, do it!".
+4. Under the "Token" section, click "Copy" to get your bot's token. This token will be used in the next step, so make sure to keep it safe.
+
+### Step 4: Environment Variables
+
+In the root of your project, create a \`.env\` file. This file will store environment variables, including the Discord bot token.
+
+The \`.env\` file should look something like this:
+
+\`\`\`bash
+DISCORD_BOT_TOKEN=<your-bot-token>
+\`\`\`
+
+Replace `<your-bot-token>` with the token you got from the Discord Developer Portal.
+
+### Step 5: Run the App
+
+Now, you can run the app using the following command:
+
+\`\`\`bash
+npm run dev
+\`\`\`
+
+Visit \`localhost:3000\` in your browser, and you should see the Midjourney Showcase up and running!
 
 ## Contributing
 
-We welcome contributions! Please see our contributing guide for more details.
+We welcome contributions from the community. If you wish to contribute, please fork this repository, make your changes, and submit a pull request.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
