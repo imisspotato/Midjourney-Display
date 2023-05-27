@@ -13,7 +13,7 @@ Before embarking on this setup journey, ensure that you have:
 - An account on [Discord](https://discord.com/) 🎙️.
 - Basic familiarity with JavaScript ☕ and React ⚛️.
 
-## 🔧 Setup Instructions
+## 🔧  Setup Instructions
 
 ### Step 1️⃣: Clone the Repository 📥
 
