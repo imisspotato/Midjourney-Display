@@ -1,11 +1,14 @@
 # Midjourney Display 🎨🖥️ 
 
-Midjourney Showcase is a futuristic, web-based gallery that showcases a mesmerizing collection of AI-generated images 🤖🎭. Immerse yourself in the extraordinary world of AI creativity with our interactive and vibrant platform!
+Midjourney Display is a futuristic, web-based gallery that showcases a mesmerizing collection of AI-generated images 🤖🎭. Immerse yourself in the extraordinary world of AI creativity with our interactive and vibrant platform!
+
+*Please note: Midjourney Display requires an active subscription to [Midjourney](https://www.midjourney.com/) in order to fully operate as an autonomous portfolio.*
 
 ## 🛠️ Prerequisites
 
 Before embarking on this setup journey, ensure that you have:
 
+- An active subscription to [Midjourney](https://www.midjourney.com/).
 - [Node.js](https://nodejs.org/en/download/) 🟩 (version 12.0.0 or higher) installed.
 - An account on [Discord](https://discord.com/) 🎙️.
 - Basic familiarity with JavaScript ☕ and React ⚛️.
@@ -17,7 +20,7 @@ Before embarking on this setup journey, ensure that you have:
 First, duplicate this repository to your local machine using Git. Execute the following command:
 
 ```bash
-git clone https://github.com/yourusername/midjourney-showcase.git
+git clone https://github.com/yourusername/midjourney-display.git
 ```
 
 ### Step 2️⃣: Install Dependencies 📦
@@ -25,7 +28,7 @@ git clone https://github.com/yourusername/midjourney-showcase.git
 Next, navigate into the project directory and install the essential dependencies with npm. Important: Due to a dependency conflict with `react-image-lightbox`, use the `--legacy-peer-deps` flag:
 
 ```bash
-cd midjourney-showcase
+cd midjourney-display
 npm install --legacy-peer-deps
 ```
 
@@ -70,7 +73,9 @@ Now, it's time to run the app using the following command:
 npm run dev
 ```
 
-Open `localhost:3000` in your browser, and you should see the Midjourney Showcase in all its glory!
+Open `localhost:300
+
+0` in your browser, and you should see the Midjourney Display in all its glory!
 
 ## 🚀 New Features
 
@@ -84,7 +89,7 @@ Remember to check out the Beta branch to explore these new features!
 
 ## 🌍 For You, Developers of The World!
 
-We would absolutely love to see the following enhancements and additions to Midjourney Showcase:
+We would absolutely love to see the following enhancements and additions to Midjourney Display:
 
 - Login/Auth system 🛂: A secure method for users to access the platform.
 - Database Integration 🗄️: To manage the AI-generated images efficiently.
@@ -95,7 +100,7 @@ This is a grand journey, and we're open-sourcing this project to collaborate and
 
 ## 🤝 Contributing
 
-Your contributions can make this showcase even more stunning! We warmly welcome changes from the community. If you wish to contribute, please fork this repository, make your changes, and submit a pull request.
+Your contributions can make this display even more stunning! We warmly welcome changes from the community. If you wish to contribute, please fork this repository, make your changes, and submit a pull request.
 
 ## 📜 License
 
