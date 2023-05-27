@@ -38,6 +38,15 @@ Follow these steps to set up a new Discord bot:
 3. Go to the "Bot" tab and click "Add Bot". Affirm by clicking "Yes, do it!".
 4. Under the "Token" section, click "Copy" to get your bot's token. Safeguard this token as it will be used in the subsequent step.
 
+Now that your bot is created, you need to invite it to your server. Here's how:
+
+1. Visit the 'OAuth2' tab in your bot's application page.
+2. Check the 'bot' box in the 'scopes' section.
+3. Then, in the 'Bot Permissions' section, select 'Administrator'.
+4. You will see a generated URL at the bottom of the scopes section, copy this URL.
+5. Paste this URL into a new browser tab and select your server.
+6. Click 'Authorize', and your bot should now be in your server.
+
 ### Step 4️⃣: Environment Variables 🌍
 
 In the root of your project, create a `.env` file. This file will store environmental variables, including the Discord bot token and the IDs for the server, channel, and session.
@@ -68,7 +77,9 @@ Open `localhost:3000` in your browser, and you should see the Midjourney Showcas
 💥 BOOM! We have some fresh updates in the Beta branch! This includes:
 
 - Download Image 📥 
-- Fast Reload ⚡
+-
+
+ Fast Reload ⚡
 - Prompt text of images 📃
 
 Remember to check out the Beta branch to explore these new features!
@@ -80,9 +91,7 @@ We would absolutely love to see the following enhancements and additions to Midj
 - Login/Auth system 🛂: A secure method for users to access the platform.
 - Database Integration 🗄️: To manage the AI-generated images efficiently.
 - Better Loading Experience 🔄: Enhancing the user experience by making the loading process smooth.
-- Tailwind Integration 💨: To
-
- make the UI sleeker and more efficient.
+- Tailwind Integration 💨: To make the UI sleeker and more efficient.
 
 This is a grand journey, and we're open-sourcing this project to collaborate and create a phenomenal platform. Join us in shaping the future of AI creativity! 
 
