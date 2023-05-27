@@ -1,4 +1,3 @@
-// bot.ts
 import { Client, Intents, TextChannel } from 'discord.js';
 import { config } from 'dotenv';
 
@@ -18,7 +17,7 @@ export async function getLatestImages() {
   const channelId = process.env.CHANNEL_ID;
   const channel = await client.channels.fetch(channelId || '');
 
-  let imageURLs: string[] = [];
+  let imageObjects: { url: string; text: string }[] = [];
 
   if (channel && channel.isText()) {
     const textChannel = channel as TextChannel;
@@ -27,14 +26,54 @@ export async function getLatestImages() {
     messages.forEach((message) => {
       message.attachments.forEach((attachment) => {
         if (attachment.height) {
-          imageURLs.push(attachment.url);
+          // Push the URL and the message content (the text associated with the image)
+          imageObjects.push({ url: attachment.url, text: message.content });
         }
       });
     });
   }
 
-  return imageURLs;
+  return imageObjects;
 }
+
+// latest bot.ts
+
+// import { Client, Intents, TextChannel } from 'discord.js';
+// import { config } from 'dotenv';
+
+// config();
+
+// const client = new Client({
+//   intents: [
+//     Intents.FLAGS.GUILDS, 
+//     Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+//     Intents.FLAGS.GUILD_MESSAGE_TYPING,
+//   ],
+// });
+
+// client.login(process.env.SALAI_TOKEN);
+
+// export async function getLatestImages() {
+//   const channelId = process.env.CHANNEL_ID;
+//   const channel = await client.channels.fetch(channelId || '');
+
+//   let imageURLs: string[] = [];
+
+//   if (channel && channel.isText()) {
+//     const textChannel = channel as TextChannel;
+//     const messages = await textChannel.messages.fetch({ limit: 100 });
+
+//     messages.forEach((message) => {
+//       message.attachments.forEach((attachment) => {
+//         if (attachment.height) {
+//           imageURLs.push(attachment.url);
+//         }
+//       });
+//     });
+//   }
+
+//   return imageURLs;
+// }
 
 //latest 
 

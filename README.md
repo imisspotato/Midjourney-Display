@@ -1,72 +1,47 @@
-# Midjourney Display 🎨🖥️
+# TypeScript Next.js example
 
-Midjourney Showcase is a futuristic, web-based gallery that showcases a mesmerizing collection of AI-generated images 🤖🎭. Immerse yourself in the extraordinary world of AI creativity with our interactive and vibrant platform!
+This is a really simple project that shows the usage of Next.js with TypeScript.
 
-## 🛠️ Prerequisites
+## Deploy your own
 
-Before embarking on this setup journey, ensure that you have:
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
 
-- [Node.js](https://nodejs.org/en/download/) 🟩 (version 12.0.0 or higher) installed.
-- An account on [Discord](https://discord.com/) 🎙️.
-- Basic familiarity with JavaScript ☕ and React ⚛️.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
 
-## 🔧 Setup Instructions
+## How to use it?
 
-### Step 1️⃣: Clone the Repository 📥
-
-First, duplicate this repository to your local machine using Git. Execute the following command:
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```bash
-git clone https://github.com/yourusername/midjourney-showcase.git
+npx create-next-app --example with-typescript with-typescript-app
 ```
-
-### Step 2️⃣: Install Dependencies 📦
-
-Next, navigate into the project directory and install the essential dependencies with npm. Important: Due to a dependency conflict with `react-image-lightbox`, use the `--legacy-peer-deps` flag:
 
 ```bash
-cd midjourney-showcase
-npm install --legacy-peer-deps
+yarn create next-app --example with-typescript with-typescript-app
 ```
-
-### Step 3️⃣: Setup Discord Bot 🤖
-
-Follow these steps to set up a new Discord bot:
-
-1. Visit the [Discord Developer Portal](https://discord.com/developers/applications) and log in to your account.
-2. Hit "New Application", then provide a name and confirm by clicking "Create".
-3. Go to the "Bot" tab and click "Add Bot". Affirm by clicking "Yes, do it!".
-4. Under the "Token" section, click "Copy" to get your bot's token. Safeguard this token as it will be used in the subsequent step.
-
-### Step 4️⃣: Environment Variables 🌍
-
-In the root of your project, create a `.env` file. This file will store environmental variables, including the Discord bot token and the IDs for the server, channel, and session.
-
-Your `.env` file should resemble this:
 
 ```bash
-SALAI_TOKEN=<your-bot-token>
-CHANNEL_ID=<your-channel-id>
-SERVER_ID=<your-server-id>
-SESSION_ID=<your-session-id>
+pnpm create next-app --example with-typescript with-typescript-app
 ```
 
-Replace `<your-bot-token>` with the token obtained from the Discord Developer Portal. The `<your-channel-id>`, `<your-server-id>`, and `<your-session-id>` must be replaced with the relevant IDs from your Discord server.
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
-### Step 5️⃣: Run the App 🚀
+## Notes
 
-Now, it's time to run the app using the following command:
+This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
 
-```bash
-npm run dev
+```
+npm install --save-dev typescript
 ```
 
-Open `localhost:3000` in your browser, and you should see the Midjourney Showcase in all its glory!
+To enable TypeScript's features, we install the type declarations for React and Node.
 
-## 🤝 Contributing
+```
+npm install --save-dev @types/react @types/react-dom @types/node
+```
 
-Your contributions can make this showcase even more stunning! We warmly welcome changes from the community. If you wish to contribute, please fork this repository, make your changes, and submit a pull request.
+When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
 
-## 📜 License
+Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
 
-This project is licensed under the MIT License. You can find more details in the [LICENSE](./LICENSE) file.
+A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
