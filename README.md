@@ -63,6 +63,16 @@ npm run dev
 
 Open `localhost:3000` in your browser, and you should see the Midjourney Showcase in all its glory!
 
+## 🚀 New Features
+
+💥 BOOM! We have some fresh updates in the Beta branch! This includes:
+
+- Download Image 📥 
+- Fast Reload ⚡
+- Prompt text of images 📃
+
+Remember to check out the Beta branch to explore these new features!
+
 ## 🤝 Contributing
 
 Your contributions can make this showcase even more stunning! We warmly welcome changes from the community. If you wish to contribute, please fork this repository, make your changes, and submit a pull request.
