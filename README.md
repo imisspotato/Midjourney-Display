@@ -77,9 +77,7 @@ Open `localhost:3000` in your browser, and you should see the Midjourney Showcas
 💥 BOOM! We have some fresh updates in the Beta branch! This includes:
 
 - Download Image 📥 
--
-
- Fast Reload ⚡
+- Fast Reload ⚡
 - Prompt text of images 📃
 
 Remember to check out the Beta branch to explore these new features!
